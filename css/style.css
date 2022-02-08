@@ -1,3 +1,8 @@
+body {
+  background-color: rgba(210, 223, 193, 1) ;
+}
+
+
 .introPage {
     display: flex;
     flex-direction: column;
@@ -9,6 +14,7 @@
 
 .spinMe {
     animation: spin 2s infinite;
+    cursor: hand;
     
 }
 
@@ -22,5 +28,53 @@
   }
 
 .daHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
     width: 100vw;
+    cursor: hand;
+}
+
+.jumbotronStyle {
+  background-color:rgba(210, 223, 193, 1) ;
+}
+.cardContainer {
+ 
+}
+
+.card {
+  border: 3px solid black;
+  margin: 10px 0;
+  border-radius: 16px;
+  
+}
+
+.card-img-top {
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+}
+.inputDisplaysearch {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.content {
+  padding: 50px;
+}
+
+.showsNear {
+  padding: 0px 30px 30px 30px;
+}
+
+/*Search Feature Page CSS*/
+
+.searchSectionDemo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
 }
