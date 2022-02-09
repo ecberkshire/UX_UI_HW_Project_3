@@ -2,6 +2,10 @@ body {
   background-color: rgba(210, 223, 193, 1) ;
 }
 
+.btnHearderSearch {
+  margin: 50px;
+}
+
 
 .introPage {
     display: flex;
