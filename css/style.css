@@ -39,6 +39,7 @@ body {
 
 .jumbotronStyle {
   background-color:rgba(210, 223, 193, 1) ;
+  margin: 50px;
 }
 .cardContainer {
  
@@ -77,4 +78,34 @@ body {
   align-items: center;
   cursor: pointer;
 
+}
+
+/*Search Intro Page Css*/
+
+.jumbotronStyleSearch {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.searchIntroP {
+  font-size: 28px;
+  
+}
+
+.introSearchBtn {
+  margin:  25px;
+}
+
+/*Item Info Page Css*/
+
+.jumbotronItemInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
