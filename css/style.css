@@ -34,7 +34,7 @@ p {
 
 .search
 {
-	border: 2px solid black;
+	
 	overflow: auto;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -44,7 +44,7 @@ p {
 .search input[type="text"]
 {
 	border: 0px;
-	width: 90%;
+	width: 87%;
 	padding: 10px 10px;
 }
 
