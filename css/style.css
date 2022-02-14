@@ -62,7 +62,7 @@ p {
 }
 
 .jumbotronStyle {
-  background-image: url(images/20180802news-recycle.jpeg);
+  background-image: url(./images/20180802news-recycle.jpeg);
   background-repeat: no-repeat;
   
   background-color:rgba(210, 223, 193, 1) ;
