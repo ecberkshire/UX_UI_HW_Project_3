@@ -1,0 +1,231 @@
+
+
+body {
+  background-color: rgba(210, 223, 193, 1) ;
+}
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  font-style: bold;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  font-weight: medium;}
+
+  a:hover, a:visited, a:link, a:active
+  {
+      text-decoration: none;
+  }
+
+.headerH2  {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 22px;
+}
+.btnHearderSearch {
+  margin: 0 50px 0 0;
+}
+
+.myBreadcrumb {
+  font-style: italic;
+  margin: 20px;
+}
+.introPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(210, 223, 193, 1);
+    height: 100vh;
+}
+
+.spinMe {
+    animation: spin 2s infinite;
+    cursor: hand;
+    
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(180deg);
+    }
+    to {
+      transform: rotate(-180deg);
+    }
+  }
+
+.daHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  
+    width: 100vw;
+    cursor: hand;
+}
+
+.jumbotronStyle {
+  background-image: url("../images/20180802news-recycle.jpeg");
+  background-repeat: no-repeat;
+  background-color:rgba(210, 223, 193, 1) ;
+  color: white;
+  
+ 
+}
+.jumbotronResources {
+  background-color:  rgba(210, 223, 193, 1)!important;
+  line-height: 20px;
+}
+.barcodeScanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  
+  background-color: #67725A;
+  margin: 15px;
+  padding: 16px;
+  font-family: 'Lato', sans-serif !important;
+  display: flex;
+  flex-direction: row;
+  border-radius: 16px;
+  align-items: center;
+  width: 95%;
+  color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0.5, 0.5);
+  cursor: pointer;
+  
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.cardManualsearch {
+  background-color: #67725A;
+  margin: 15px;
+  padding: 16px;
+  font-family: 'Lato', sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  align-items: center;
+  width: 95%;
+  color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0.5, 0.5);
+}
+.cardItemFound {
+  background-color: #67725A;
+  margin: 15px;
+  padding: 16px;
+  font-family: 'Lato', sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  align-items: center;
+  justify-items: center;
+  width: 95%;
+  color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0.5, 0.5);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  background-color: #67725A;
+  color: white;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.myButton {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+font-family: 'Lato', sans-serif;
+color: white;
+font-size: 24px;
+background: rgba(165, 191, 131, 0.75);
+box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.25);
+border-radius: 16px;
+}
+.myButton:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #67725A;
+  text-decoration: none;
+}
+.inputDisplaysearch {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+
+
+.showsNear {
+  padding: 0px 30px 30px 30px;
+}
+
+/*Search Feature Page CSS*/
+
+.searchSectionDemo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+/*Search Intro Page Css*/
+
+.jumbotronStyleSearch {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.searchIntroP {
+  font-size: 28px;
+  
+}
+
+.introSearchBtn {
+  margin:  25px;
+}
+
+/*Item Info Page Css*/
+
+.jumbotronItemInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.btn:hover {
+  background-color: #A5BF83;
+}
+
+
