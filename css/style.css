@@ -66,9 +66,17 @@ p {
         cursor:pointer;
 }
 
-@media only screen and (min-width : 150px) and (max-width : 780px)
-{
-	
+.fakeButton:hover {
+  background-color: white;
+  color: 67725A;
+}
+
+
+  
+  .noTextdecoration:active{
+  color: white;
+  text-decoration: none;
+}	
 	.search
 	{
 		width: 95%;
