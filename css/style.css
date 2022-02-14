@@ -24,8 +24,9 @@ h2 {
 }
 
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 22px;
+  font-style: italic;
 }
 .btnHearderSearch {
   margin: 0 50px 0 0;
