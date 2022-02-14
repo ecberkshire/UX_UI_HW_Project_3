@@ -14,6 +14,11 @@ h2 {
   font-size: 28px;
   font-weight: medium;}
 
+  a:hover, a:visited, a:link, a:active
+  {
+      text-decoration: none;
+  }
+
 .headerH2  {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -75,6 +80,11 @@ p {
 .jumbotronResources {
   background-color:  rgba(210, 223, 193, 1)!important;
   line-height: 20px;
+}
+.barcodeScanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
