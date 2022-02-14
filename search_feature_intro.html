@@ -33,25 +33,42 @@
 </head>
 <body>
     <section class="daHeader">
-        <div>
-            <img src="images/iPhoneX.png" alt="iPhone Stuff">
-        </div>
+        
         <div>
             <a href="homepage.html">
-                <img src="images/header.png" alt="Logo">
+                <img src="images/logo_header.png" alt="Logo">
             </a>
-            <p>Home > Search Item</p>
+            <p class="myBreadcrumb">Home > Search Item</p>
         </div>
     </section>
-    <!--jumbotron-->
-    <div class="jumbotron jumbotronStyleSearch">
+    <!--cards-->
+    
+      <div class="cardManualsearch">
         
-        <p class="searchIntroP">Use our barcode scanner to take a picture of your product, and learn how it can be recycled!</p>
-        <a class="btn btn-primary btn-lg introSearchBtn" href="search_feature.html" role="button">Scan Barcode</a> 
         
-        <p class="searchIntroP">You can also manually search for your product if it doesn't have a barcode.</p>
-        <a class="btn btn-primary btn-lg introSearchBtn" href="search_feature_manual.html" role="button">Manual Search</a>
+        <div class="card-body">
+          <h2>Barcode Scanner</h2>
+          <p>Scan your product's barcode and search our database for information on how to recycle your product</p>
+        </div>
+        
+        <a href="search_feature.html">
+        <button class="myButton">scan now</button>
+      </a>
       </div>
+      
+
+      
+      <div class="cardManualsearch">
+        
+        <div class="card-body">
+          <h2>Manual Search</h2>
+          <p>You can also manually search for your product if it doesn't have a barcode</p>
+        </div>
+        <a href="search_feature_manual.html">
+        <button class="myButton">search</button>
+      </a>
+      </div>
+      
     
 
 

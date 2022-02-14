@@ -23,10 +23,13 @@ p {
   font-size: 22px;
 }
 .btnHearderSearch {
-  margin: 50px;
+  margin: 0 50px 0 0;
 }
 
-
+.myBreadcrumb {
+  font-style: italic;
+  margin: 20px;
+}
 .introPage {
     display: flex;
     flex-direction: column;
@@ -62,7 +65,7 @@ p {
 }
 
 .jumbotronStyle {
-  background-image: url("images/20180802news-recycle.jpeg");
+  background-image: url("/images/20180802news-recycle.jpeg");
   background-repeat: no-repeat;
   
   background-color:rgba(210, 223, 193, 1) ;
@@ -70,20 +73,56 @@ p {
   
  
 }
-.cardContainer {
- display: flex;
- justify-content: space-between;
- 
+.jumbotronResources {
+  background-color:  rgba(210, 223, 193, 1)!important;
+  line-height: 20px;
 }
 
 .card {
-  border: 3px solid black;
-  margin: 10px 0;
-  border-radius: 16px;
+  
+  background-color: #67725A;
+  margin: 15px;
+  padding: 16px;
   font-family: 'Lato', sans-serif !important;
   display: flex;
+  flex-direction: row;
   border-radius: 16px;
+  align-items: center;
+  width: 95%;
+  color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0.5, 0.5);
+  cursor: pointer;
   
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.cardManualsearch {
+  background-color: #67725A;
+  margin: 15px;
+  padding: 16px;
+  font-family: 'Lato', sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  align-items: center;
+  width: 95%;
+  color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0.5, 0.5);
+}
+.cardItemFound {
+  background-color: #67725A;
+  margin: 15px;
+  padding: 16px;
+  font-family: 'Lato', sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  align-items: center;
+  justify-items: center;
+  width: 95%;
+  color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0.5, 0.5);
 }
 
 .card-body {
@@ -91,15 +130,31 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  line-height: 20px;
   background-color: #67725A;
   color: white;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
 
-.card-img-top {
-  border-top-right-radius: 16px;
-  border-top-left-radius: 16px;
+.myButton {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+font-family: 'Lato', sans-serif;
+color: white;
+font-size: 24px;
+background: rgba(165, 191, 131, 0.75);
+box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.25);
+border-radius: 16px;
+}
+.myButton:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #67725A;
+  text-decoration: none;
 }
 .inputDisplaysearch {
   display: flex;
@@ -107,8 +162,61 @@ p {
 
 }
 
-.content {
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: ;
+  display: flex;
+  justify-content: space-around;
+}
+.loadingBar {
+  display: flex;
+  flex-direction: column;
   
+  background-color: black;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.loadingBar {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #eee;
 }
 
 .showsNear {
@@ -166,15 +274,4 @@ p {
   background-color: #A5BF83;
 }
 
-.btnLogo:hover {
-  animation: spin 2s infinite;
-    cursor: hand;
-}
-@keyframes spin {
-  from {
-    transform: rotate(180deg);
-  }
-  to {
-    transform: rotate(-180deg);
-  }
-}
+
